@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intelligent Traffic Management System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>ITMS - Number Plate and Helmet Detection</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="home">
+        <h2>Welcome to ITMS</h2>
+        <p>Efficient and smart traffic management for modern cities.</p>
+    </section>
+
+    <section id="about">
+        <h2>About</h2>
+        <p>The Intelligent Traffic Management System (ITMS) aims to improve traffic flow and reduce congestion through advanced technologies.</p>
+    </section>
+
+    <section id="features">
+        <h2>Features</h2>
+        <ul>
+            <li>Real-time traffic monitoring</li>
+            <li>Adaptive traffic signals</li>
+            <li>Emergency vehicle prioritization</li>
+            <li>Data analytics and reporting</li>
+            <li>Number Plate Detection</li>
+            <li>Helmet Detection</li>
+        </ul>
+    </section>
+
+    <section id="detection">
+        <h2>Number Plate and Helmet Detection</h2>
+        <div class="upload-container">
+            <label for="file-upload" class="custom-file-upload">
+                Upload Image
+            </label>
+            <input id="file-upload" type="file" accept="image/*" onchange="detectImage(event)">
+        </div>
+        <div id="image-display">
+            <img id="selected-image" src="" alt="Selected Image">
+            <div id="detection-results"></div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Intelligent Traffic Management System</p>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
